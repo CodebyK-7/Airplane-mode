@@ -1,9 +1,12 @@
 Android App to Change Image Based on Airplane Mode Broadcast Receiver
+
 Step 1: Create a New Android Project
+
 Step 2: Add Permissions in AndroidManifest.xml
 Ensure that the required permissions are declared in AndroidManifest.xml.
 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 Step 3: Set Up Layout (activity_main.xml)
 Add Images to res/drawable You need two images for this app:
 
@@ -46,6 +49,7 @@ Open res/layout/activity_main.xml and define an ImageView that will show differe
         app:srcCompat="@drawable/airplane_off" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 Step 4: Create the BroadcastReceiver in MainActivity.java
 In MainActivity.java, create the BroadcastReceiver to listen for airplane mode changes and update the image accordingly.
 
